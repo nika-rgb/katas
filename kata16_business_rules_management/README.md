@@ -29,7 +29,8 @@ Pros:
 so in this case I would isolate this artifact to avoid cascading failures
 * Independently scalable service that can be scaled according to the needs
 * Shared nothing architecture, this service would be fully responsible for managing the rules and applying them
-Cons:
+
+ Cons:
 * Latency of the order placement, before placing the order rules should be applied to define the final state of order
 * Every change should be controlled in runtime that makes harder and forces us to use strategies like canary deployment 
 for change management
